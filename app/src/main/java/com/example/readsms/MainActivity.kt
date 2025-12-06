@@ -8,6 +8,7 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
@@ -39,21 +40,29 @@ class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // 1. Check Config
-        val prefs = android.preference.PreferenceManager.getDefaultSharedPreferences(this)
-        if (!prefs.getBoolean("is_configured", false)) {
-            startActivity(Intent(this, ConfigActivity::class.java))
-            finish()
-            return
-        }
-
         try {
+            // 1. Check Config Safety Check
+            try {
+                val prefs = PreferenceManager.getDefaultSharedPreferences(this)
+                if (!prefs.getBoolean("is_configured", false)) {
+                    val intent = Intent(this, ConfigActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                    return
+                }
+            } catch (e: Exception) {
+                 android.util.Log.e("CRASH_REPORT", "Config Check Failed", e)
+            }
+
             setContentView(R.layout.activity_main)
-            
+
             // Start the Background Monitor Service
-            val intent = Intent(this, SmsMonitorService::class.java)
-            startService(intent)
+            try {
+                val intent = Intent(this, SmsMonitorService::class.java)
+                startService(intent)
+            } catch (e: Exception) {
+                android.util.Log.e("CRASH_REPORT", "Service Start Failed", e)
+            }
 
             statusText = findViewById(R.id.statusText)
             permissionButton = findViewById(R.id.permissionButton)
@@ -73,10 +82,8 @@ class MainActivity : Activity() {
                     resendApi(record)
                 }
                 listView.adapter = adapter
-                statusText.text = "Adapter Init Success"
             } catch (e: Exception) {
                 statusText.text = "Adapter Error: ${e.message}"
-                android.util.Log.e("CRASH_REPORT", "Adapter Error", e)
                 return
             }
 
@@ -85,23 +92,24 @@ class MainActivity : Activity() {
                  scanInbox()
             }
             
-            findViewById<Button>(R.id.btnSettings).setOnClickListener {
-                startActivity(Intent(this, ConfigActivity::class.java))
+            try {
+                findViewById<Button>(R.id.btnSettings).setOnClickListener {
+                    startActivity(Intent(this, ConfigActivity::class.java))
+                }
+                
+                findViewById<Button>(R.id.btnAbout).setOnClickListener {
+                    startActivity(Intent(this, AboutActivity::class.java))
+                }
+            } catch (e: Exception) {
+                // Button finding failed?
+                statusText.text = "Button Error: ${e.message}"
             }
-            
-            findViewById<Button>(R.id.btnAbout).setOnClickListener {
-                startActivity(Intent(this, AboutActivity::class.java))
-            }
-            
-            // Add Config/About Buttons (Hack: Finding a container or adding below scan)
-            // Just overriding existing button actions for now or we need to edit XML
-            // Better: Add these buttons to the layout later. For now, let's assume valid XML exists
-            // Let's add them to XML first...
             
             try {
                 checkPermission()
                 loadRecords()
-                val keyword = prefs.getString("keyword", "DONIKKAH")
+                val prefs = PreferenceManager.getDefaultSharedPreferences(this)
+                val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
                 statusText.text = "Ready. Scanning for '$keyword'..." 
             } catch (e: Exception) {
                 statusText.text = "Load Error: ${e.message}"
@@ -118,8 +126,14 @@ class MainActivity : Activity() {
                  android.util.Log.e("CRASH_REPORT", "Receiver Error", e)
             }
         } catch (e: Exception) {
+            // Fatal Setup Error - Fallback UI
+            val tv = TextView(this)
+            tv.text = "FATAL ERROR:\n${e.message}\n${android.util.Log.getStackTraceString(e)}"
+            tv.textSize = 20f
+            tv.setTextColor(android.graphics.Color.RED)
+            setContentView(tv)
+            
             android.util.Log.e("CRASH_REPORT", "Error in MainActivity: " + e.message, e)
-            throw e 
         }
     }
     
@@ -214,7 +228,7 @@ class MainActivity : Activity() {
                     val address = cursorSms.getString(cursorSms.getColumnIndexOrThrow("address")) ?: "Unknown"
                     
                     // Load keyword from prefs
-                    val prefs = android.preference.PreferenceManager.getDefaultSharedPreferences(this)
+                    val prefs = PreferenceManager.getDefaultSharedPreferences(this)
                     val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
                     
                     if (body.contains(keyword, ignoreCase = true)) {
@@ -244,8 +258,12 @@ class MainActivity : Activity() {
                     val body = getMmsText(mmsId)
                     val address = getMmsAddress(mmsId)
                     
-                    if (body.contains("donikkah", ignoreCase = true)) {
-                         val pattern = java.util.regex.Pattern.compile("(?i)donikkah\\s*\\d+")
+                    // Load keyword from prefs (MMS)
+                    val prefs = PreferenceManager.getDefaultSharedPreferences(this)
+                    val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
+                    
+                    if (body.contains(keyword, ignoreCase = true)) {
+                         val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*\\d+")
                          val matcher = pattern.matcher(body)
                          val code = if (matcher.find()) matcher.group() else body
                          
@@ -263,7 +281,7 @@ class MainActivity : Activity() {
             if (total > 0) {
                  statusText.text = "Scan Complete.\nFound: $newSmsCount SMS, $newMmsCount MMS/RCS.\n$sb"
             } else {
-                 statusText.text = "Scan Complete. No new 'DONIKKAH' messages found."
+                 statusText.text = "Scan Complete. No new relevant messages found."
             }
             
         } catch (e: Exception) {
@@ -277,7 +295,6 @@ class MainActivity : Activity() {
         // Strict duplicate check on content info to prevent spamming list:
         val alreadyHas = dbHelper.getAllRecords().any { it.code == code }
         if (!alreadyHas) {
-            // We use insertSms from DatabaseHelper (which we verified is named insertSms)
             val id = dbHelper.insertSms(code, address)
             val record = SmsRecord(id, code, address, DatabaseHelper.STATUS_PENDING, System.currentTimeMillis())
             resendApi(record)
