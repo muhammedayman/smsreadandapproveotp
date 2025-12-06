@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+drawable item_background
+id btnAbout
+id btnResend
+id btnSave
+id btnSettings
+id etApiUrl
+id etHeaderKey1
+id etHeaderKey2
+id etHeaderVal1
+id etHeaderVal2
+id etKeyword
+id etPayload
+id permissionButton
+id recyclerView
+id scanButton
+id statusText
+id textCode
+id textPhone
+id textStatus
+layout activity_about
+layout activity_config
+layout activity_main
+layout list_item_sms
+string app_name
+style AppTheme
+xml backup_rules
+xml data_extraction_rules
