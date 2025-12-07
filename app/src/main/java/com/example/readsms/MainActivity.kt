@@ -343,6 +343,11 @@ class MainActivity : Activity() {
 
     private fun saveRecordIfNew(code: String, phone: String): Boolean {
         return try {
+            // IGNORE IF ALREADY VERIFIED
+            if (dbHelper.isNumberVerified(phone)) {
+                return false
+            }
+
             val id = dbHelper.upsertSms(code, phone)
             if (id != -1L) {
                  val record = SmsRecord(id, code, phone, DatabaseHelper.STATUS_PENDING, System.currentTimeMillis())

@@ -42,6 +42,20 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         return upsertSms(code, phone)
     }
 
+    fun isNumberVerified(phone: String): Boolean {
+        val db = this.readableDatabase
+        val cursor = db.query(
+            TABLE_SMS, 
+            arrayOf(COLUMN_ID), 
+            "$COLUMN_PHONE = ? AND $COLUMN_STATUS = ?", 
+            arrayOf(phone, STATUS_SUCCESS), 
+            null, null, null
+        )
+        val exists = cursor.count > 0
+        cursor.close()
+        return exists
+    }
+
     fun upsertSms(code: String, phone: String): Long {
         val db = this.writableDatabase
         val values = ContentValues()

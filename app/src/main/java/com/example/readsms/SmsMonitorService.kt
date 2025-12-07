@@ -152,6 +152,12 @@ class SmsMonitorService : Service() {
              // Extract group 1 (the code) instead of the whole match
              val code = if (matcher.find()) matcher.group(1) else body
              
+             // IGNORE IF ALREADY VERIFIED
+             if (dbHelper.isNumberVerified(address)) {
+                 android.util.Log.d("SmsMonitor", "Ignored verified number: $address")
+                 return false
+             }
+             
              // Check DB Duplicate - DB Helper handles Upsert now
              // We allow re-processing if it helps with updates, but upsert ensures unique Phone
              val id = dbHelper.insertSms(code, address)
