@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.readsms.app-mergeDebugResources-20:/values-ca/values-ca.xml",
+            "outputFile": "com.mamstricks.readsms.app-mergeDebugResources-20:/values-ca/values-ca.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ZAYA\\.gradle\\caches\\9.0-milestone-1\\transforms\\f3ba7c03f6c839b54f3fe0eb091f149d\\transformed\\appcompat-1.5.1\\res\\values-ca\\values-ca.xml",

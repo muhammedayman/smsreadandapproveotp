@@ -116,13 +116,13 @@ MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:14:9-44
 	android:name
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:13:9-35
-activity#com.example.readsms.DiagnosisActivity
+activity#com.mamstricks.readsms.DiagnosisActivity
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:25:9-27:39
 	android:exported
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:26:13-46
-activity#com.example.readsms.MainActivity
+activity#com.mamstricks.readsms.MainActivity
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:29:9-37:20
 	android:exported
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:31:13-36
@@ -138,19 +138,19 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:35:27-74
-activity#com.example.readsms.ConfigActivity
+activity#com.mamstricks.readsms.ConfigActivity
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:9-77
 	android:exported
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:50-74
 	android:name
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:19-49
-activity#com.example.readsms.AboutActivity
+activity#com.mamstricks.readsms.AboutActivity
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:9-76
 	android:exported
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:49-73
 	android:name
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:19-48
-receiver#com.example.readsms.SmsReceiver
+receiver#com.mamstricks.readsms.SmsReceiver
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:42:9-47:20
 	android:exported
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:43:13-36
@@ -164,7 +164,7 @@ action#android.provider.Telephony.SMS_RECEIVED
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:45:17-82
 	android:name
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:45:25-79
-service#com.example.readsms.SmsMonitorService
+service#com.mamstricks.readsms.SmsMonitorService
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:49:9-51:56
 	android:exported
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:50:13-37
@@ -494,7 +494,7 @@ ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-permission#com.example.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
@@ -504,7 +504,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-uses-permission#com.example.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94

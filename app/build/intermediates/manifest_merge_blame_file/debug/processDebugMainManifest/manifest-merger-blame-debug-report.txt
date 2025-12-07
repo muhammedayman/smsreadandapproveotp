@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.readsms"
+3    package="com.mamstricks.readsms"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -38,18 +38,18 @@
 20
 21    <permission
 21-->[androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-22        android:name="com.example.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22        android:name="com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 22-->[androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 23        android:protectionLevel="signature" />
 23-->[androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 24
-25    <uses-permission android:name="com.example.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25    <uses-permission android:name="com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 25-->[androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 25-->[androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 26
 27    <application
 27-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:12:5-53:19
-28        android:name="com.example.readsms.ReadSmsApp"
+28        android:name="com.mamstricks.readsms.ReadSmsApp"
 28-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:13:9-35
 29        android:allowBackup="true"
 29-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:15:9-35
@@ -76,13 +76,13 @@
 42        <!-- Temporary Diagnosis Activity -->
 43        <activity
 43-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:25:9-27:39
-44            android:name="com.example.readsms.DiagnosisActivity"
+44            android:name="com.mamstricks.readsms.DiagnosisActivity"
 44-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:26:13-46
 45            android:exported="true" />
 45-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:27:13-36
 46        <activity
 46-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:29:9-37:20
-47            android:name="com.example.readsms.MainActivity"
+47            android:name="com.mamstricks.readsms.MainActivity"
 47-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:30:13-41
 48            android:exported="true" >
 48-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:31:13-36
@@ -101,20 +101,20 @@
 56        </activity>
 57        <activity
 57-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:9-77
-58            android:name="com.example.readsms.ConfigActivity"
+58            android:name="com.mamstricks.readsms.ConfigActivity"
 58-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:19-49
 59            android:exported="false" />
 59-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:50-74
 60        <activity
 60-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:9-76
-61            android:name="com.example.readsms.AboutActivity"
+61            android:name="com.mamstricks.readsms.AboutActivity"
 61-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:19-48
 62            android:exported="false" />
 62-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:49-73
 63
 64        <receiver
 64-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:42:9-47:20
-65            android:name="com.example.readsms.SmsReceiver"
+65            android:name="com.mamstricks.readsms.SmsReceiver"
 65-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:42:19-46
 66            android:exported="true" >
 66-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:43:13-36
@@ -129,7 +129,7 @@
 71
 72        <service
 72-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:49:9-51:56
-73            android:name="com.example.readsms.SmsMonitorService"
+73            android:name="com.mamstricks.readsms.SmsMonitorService"
 73-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:49:18-51
 74            android:exported="false"
 74-->D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:50:13-37
@@ -140,7 +140,7 @@
 77-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 78            android:name="androidx.startup.InitializationProvider"
 78-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-79            android:authorities="com.example.readsms.androidx-startup"
+79            android:authorities="com.mamstricks.readsms.androidx-startup"
 79-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
 80            android:exported="false" >
 80-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37

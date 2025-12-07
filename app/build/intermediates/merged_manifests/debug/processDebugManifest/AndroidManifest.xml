@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.readsms"
+    package="com.mamstricks.readsms"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,13 +19,13 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <permission
-        android:name="com.example.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.example.readsms.ReadSmsApp"
+        android:name="com.mamstricks.readsms.ReadSmsApp"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -41,10 +41,10 @@
 
         <!-- Temporary Diagnosis Activity -->
         <activity
-            android:name="com.example.readsms.DiagnosisActivity"
+            android:name="com.mamstricks.readsms.DiagnosisActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.readsms.MainActivity"
+            android:name="com.mamstricks.readsms.MainActivity"
             android:exported="true" >
 
             <!-- Main launcher intent remains here for now, logic inside Main will redirect -->
@@ -55,14 +55,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.readsms.ConfigActivity"
+            android:name="com.mamstricks.readsms.ConfigActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.readsms.AboutActivity"
+            android:name="com.mamstricks.readsms.AboutActivity"
             android:exported="false" />
 
         <receiver
-            android:name="com.example.readsms.SmsReceiver"
+            android:name="com.mamstricks.readsms.SmsReceiver"
             android:exported="true" >
             <intent-filter android:priority="2147483647" >
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
@@ -70,13 +70,13 @@
         </receiver>
 
         <service
-            android:name="com.example.readsms.SmsMonitorService"
+            android:name="com.mamstricks.readsms.SmsMonitorService"
             android:exported="false"
             android:foregroundServiceType="dataSync" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.readsms.androidx-startup"
+            android:authorities="com.mamstricks.readsms.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

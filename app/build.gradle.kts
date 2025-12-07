@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.readsms"
+    namespace = "com.mamstricks.readsms"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.readsms"
+        applicationId = "com.mamstricks.readsms"
         minSdk = 14
         targetSdk = 34
         versionCode = 1
