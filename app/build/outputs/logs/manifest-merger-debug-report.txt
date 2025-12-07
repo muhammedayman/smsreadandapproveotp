@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-54:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\40630bd215171a8a4aef4ca77d42b9eb\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f3ba7c03f6c839b54f3fe0eb091f149d\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\a174bde00d9f0cb9b94151d541d29bd4\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
@@ -65,9 +65,19 @@ uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:8:5-76
 	android:name
 		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:8:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:9:5-76
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:9:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_DATA_SYNC
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:10:5-87
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:10:22-84
 application
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:10:5-48:19
-INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:10:5-48:19
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:12:5-52:19
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:12:5-52:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:30:5-143:19
@@ -87,77 +97,79 @@ MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:18:9-35
 	android:fullBackupContent
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:16:9-54
 	tools:targetApi
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:19:9-29
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:21:9-29
 	android:icon
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:15:9-58
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:17:9-58
 	android:allowBackup
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:20:9-40
 	android:dataExtractionRules
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:13:9-65
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:15:9-65
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:13:9-35
 activity#com.example.readsms.DiagnosisActivity
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:22:9-24:39
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:24:9-26:39
 	android:exported
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:24:13-36
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:23:13-46
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:25:13-46
 activity#com.example.readsms.MainActivity
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:26:9-34:20
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:28:9-36:20
 	android:exported
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:28:13-36
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:27:13-41
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:29:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:30:13-33:29
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:32:13-35:29
 action#android.intent.action.MAIN
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:34:27-74
 activity#com.example.readsms.ConfigActivity
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:36:9-77
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:38:9-77
 	android:exported
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:36:50-74
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:38:50-74
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:36:19-49
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:38:19-49
 activity#com.example.readsms.AboutActivity
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:37:9-76
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:9-76
 	android:exported
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:37:49-73
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:49-73
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:37:19-48
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:19-48
 receiver#com.example.readsms.SmsReceiver
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:9-44:20
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:41:9-46:20
 	android:exported
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:13-36
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:42:13-36
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:39:19-46
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:41:19-46
 intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:41:13-43:29
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:43:13-45:29
 	android:priority
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:41:28-57
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:43:28-57
 action#android.provider.Telephony.SMS_RECEIVED
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:42:17-82
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:44:17-82
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:42:25-79
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:44:25-79
 service#com.example.readsms.SmsMonitorService
-ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:46:9-79
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:48:9-50:56
 	android:exported
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:46:52-76
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:49:13-37
+	android:foregroundServiceType
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:50:13-53
 	android:name
-		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:46:18-51
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:48:18-51
 uses-sdk
 INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
@@ -270,10 +282,6 @@ uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:5-81
 	android:name
 		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:22-78
-uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
-	android:name
-		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:22-74
 meta-data#androidx.work.WorkManagerInitializer
 ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
 	android:value

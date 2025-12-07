@@ -45,7 +45,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         values.put(COLUMN_STATUS, STATUS_PENDING)
         values.put(COLUMN_TIMESTAMP, System.currentTimeMillis())
         val id = db.insert(TABLE_SMS, null, values)
-        db.close()
+        // db.close() - Keep open for concurrency
         return id
     }
 
@@ -54,7 +54,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         val values = ContentValues()
         values.put(COLUMN_STATUS, status)
         db.update(TABLE_SMS, values, "$COLUMN_ID = ?", arrayOf(id.toString()))
-        db.close()
+        // db.close() - Keep open for concurrency
     }
 
     fun getAllRecords(): List<SmsRecord> {
@@ -74,7 +74,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             } while (cursor.moveToNext())
         }
         cursor.close()
-        db.close()
+        // db.close() - Keep open for concurrency
         return list
     }
 }

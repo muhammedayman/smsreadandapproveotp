@@ -6,6 +6,12 @@ import android.os.Bundle
 class AboutActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_about)
+        try {
+            setContentView(R.layout.activity_about)
+        } catch (e: Exception) {
+             val tv = android.widget.TextView(this)
+             tv.text = "Error: " + e.message
+             setContentView(tv)
+        }
     }
 }

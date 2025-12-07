@@ -73,6 +73,16 @@ class VerifyUserWorker(context: Context, params: WorkerParameters) : Worker(cont
 
         return try {
             val response = client.newCall(request).execute()
+            val respBody = response.body()?.string() ?: ""
+            
+            // Broadcast for Debugging
+            val debugIntent = Intent("com.example.readsms.API_DEBUG")
+            debugIntent.setPackage(applicationContext.packageName)
+            debugIntent.putExtra("payload", json)
+            debugIntent.putExtra("response_code", response.code())
+            debugIntent.putExtra("response_body", respBody)
+            applicationContext.sendBroadcast(debugIntent)
+            
             if (response.isSuccessful) {
                 Log.d("VerifyUserWorker", "API Call Success: ${response.code()}")
                 if (recordId != -1L) updateDbStatus(recordId, DatabaseHelper.STATUS_SUCCESS)
@@ -89,8 +99,15 @@ class VerifyUserWorker(context: Context, params: WorkerParameters) : Worker(cont
             }
         } catch (e: Exception) {
             Log.e("VerifyUserWorker", "Exception during API call", e)
-             if (recordId != -1L) updateDbStatus(recordId, DatabaseHelper.STATUS_FAILURE)
-             // Network error, might want retry
+             // Broadcast for Debugging (Error)
+            val debugIntent = Intent("com.example.readsms.API_DEBUG")
+            debugIntent.setPackage(applicationContext.packageName)
+            debugIntent.putExtra("payload", json)
+            debugIntent.putExtra("response_code", -1)
+            debugIntent.putExtra("response_body", "Exception: ${e.message}")
+            applicationContext.sendBroadcast(debugIntent)
+            
+            if (recordId != -1L) updateDbStatus(recordId, DatabaseHelper.STATUS_FAILURE)
             Result.retry()
         }
     }

@@ -17,6 +17,7 @@ class SmsMonitorService : Service() {
 
     private lateinit var dbHelper: DatabaseHelper
     private val handler = Handler()
+    private val CHANNEL_ID = "SmsMonitorChannel"
 
     private val smsObserver = object : ContentObserver(handler) {
         override fun onChange(selfChange: Boolean) {
@@ -34,6 +35,14 @@ class SmsMonitorService : Service() {
         dbHelper = DatabaseHelper(this)
         Log.d("SmsMonitor", "Service Created")
         
+        createNotificationChannel()
+        val notification = createNotification()
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+            startForeground(1, notification, android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
+        } else {
+            startForeground(1, notification)
+        }
+        
         // Register Observers for both SMS and MMS
         contentResolver.registerContentObserver(Uri.parse("content://sms/"), true, smsObserver)
         contentResolver.registerContentObserver(Uri.parse("content://mms/"), true, smsObserver)
@@ -41,8 +50,45 @@ class SmsMonitorService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d("SmsMonitor", "Service Started")
+        
+        val notification = createNotification()
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+            startForeground(1, notification, android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
+        } else {
+            startForeground(1, notification)
+        }
+        
         // Sticky means if the OS kills it for memory, it recreates it automatically
         return START_STICKY
+    }
+
+    private fun createNotificationChannel() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            val serviceChannel = android.app.NotificationChannel(
+                CHANNEL_ID,
+                "SMS Monitor Service",
+                android.app.NotificationManager.IMPORTANCE_LOW
+            )
+            val manager = getSystemService(android.app.NotificationManager::class.java)
+            manager.createNotificationChannel(serviceChannel)
+        }
+    }
+
+    private fun createNotification(): android.app.Notification {
+        val notificationIntent = Intent(this, MainActivity::class.java)
+        val pendingIntent = android.app.PendingIntent.getActivity(
+            this,
+            0,
+            notificationIntent,
+            android.app.PendingIntent.FLAG_IMMUTABLE
+        )
+
+        return androidx.core.app.NotificationCompat.Builder(this, CHANNEL_ID)
+            .setContentTitle("SMS Monitor Running")
+            .setContentText("Listening for OTP messages...")
+            .setSmallIcon(android.R.drawable.ic_dialog_info)
+            .setContentIntent(pendingIntent)
+            .build()
     }
 
     override fun onDestroy() {
@@ -100,7 +146,7 @@ class SmsMonitorService : Service() {
         val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
 
         if (body.contains(keyword, ignoreCase = true)) {
-             val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*\\d+")
+             val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*[a-zA-Z0-9]+")
              val matcher = pattern.matcher(body)
              val code = if (matcher.find()) matcher.group() else body
              

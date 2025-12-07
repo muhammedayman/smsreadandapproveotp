@@ -38,6 +38,22 @@ class MainActivity : Activity() {
         }
     }
 
+    private val apiDebugReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context?, intent: Intent?) {
+            if (intent?.action == "com.example.readsms.API_DEBUG") {
+                val payload = intent.getStringExtra("payload")
+                val code = intent.getIntExtra("response_code", 0)
+                val body = intent.getStringExtra("response_body")
+                
+                android.app.AlertDialog.Builder(this@MainActivity)
+                    .setTitle("API Debug ($code)")
+                    .setMessage("Payload:\n$payload\n\nResponse:\n$body")
+                    .setPositiveButton("OK", null)
+                    .show()
+            }
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         try {
@@ -59,7 +75,11 @@ class MainActivity : Activity() {
             // Start the Background Monitor Service
             try {
                 val intent = Intent(this, SmsMonitorService::class.java)
-                startService(intent)
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                    startForegroundService(intent)
+                } else {
+                    startService(intent)
+                }
             } catch (e: Exception) {
                 android.util.Log.e("CRASH_REPORT", "Service Start Failed", e)
             }
@@ -122,6 +142,7 @@ class MainActivity : Activity() {
             
             try {
                 registerReceiver(refreshReceiver, IntentFilter("com.example.readsms.UPDATE_LIST"))
+                registerReceiver(apiDebugReceiver, IntentFilter("com.example.readsms.API_DEBUG"))
             } catch (e: Exception) {
                  android.util.Log.e("CRASH_REPORT", "Receiver Error", e)
             }
@@ -159,7 +180,12 @@ class MainActivity : Activity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        unregisterReceiver(refreshReceiver)
+        try {
+            unregisterReceiver(refreshReceiver)
+            unregisterReceiver(apiDebugReceiver)
+        } catch (e: Exception) {
+            // Receiver might not have been registered if onCreate failed or redirected
+        }
     }
 
     private fun loadRecords() {
@@ -232,7 +258,7 @@ class MainActivity : Activity() {
                     val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
                     
                     if (body.contains(keyword, ignoreCase = true)) {
-                         val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*\\d+")
+                         val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*[a-zA-Z0-9]+")
                          val matcher = pattern.matcher(body)
                          val code = if (matcher.find()) matcher.group() else body
                          
@@ -263,7 +289,7 @@ class MainActivity : Activity() {
                     val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
                     
                     if (body.contains(keyword, ignoreCase = true)) {
-                         val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*\\d+")
+                         val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*[a-zA-Z0-9]+")
                          val matcher = pattern.matcher(body)
                          val code = if (matcher.find()) matcher.group() else body
                          
