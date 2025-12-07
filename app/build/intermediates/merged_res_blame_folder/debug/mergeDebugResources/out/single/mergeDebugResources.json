@@ -24,6 +24,10 @@
         "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\xml\\backup_rules.xml"
     },
     {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\drawable_donation_qr.jpg.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\drawable\\donation_qr.jpg"
+    },
+    {
         "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },

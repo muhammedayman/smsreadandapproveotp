@@ -20,5 +20,15 @@ class AboutActivity : AppCompatActivity() {
             e.printStackTrace()
             tvVersion.text = "Version Unknown"
         }
+
+        findViewById<android.widget.Button>(R.id.btnDonate).setOnClickListener {
+            val uri = android.net.Uri.parse("upi://pay?pa=Q801608072@ybl&pn=PhonePeMerchant&mc=0000&mode=02&purpose=00")
+            val intent = android.content.Intent(android.content.Intent.ACTION_VIEW, uri)
+            try {
+                startActivity(intent)
+            } catch (e: Exception) {
+                android.widget.Toast.makeText(this, "No UPI app found", android.widget.Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }

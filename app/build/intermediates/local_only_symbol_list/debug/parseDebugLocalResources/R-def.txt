@@ -13,9 +13,11 @@ color text_on_accent
 color text_primary
 color text_secondary
 drawable bg_card
+drawable donation_qr
 drawable ic_launcher_background
 drawable ic_menu
 drawable item_background
+id btnDonate
 id btnGrantPermission
 id btnMenu
 id btnResend

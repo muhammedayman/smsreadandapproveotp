@@ -101,3 +101,13 @@ A: The app logs the failure. Currently, it does not automatically retry indefini
 
 **Q: Is "ZeroGate" the final name?**
 A: This is the suggested branding for the open-source version. You can recompile the app with any name you wish.
+
+---
+
+## ☕ Support / Donate
+
+If you found this project helpful, consider buying me a coffee or contributing via GPay:
+
+<img src="donation_qr.jpg" width="200" alt="Donation QR Code">
+
+**GPay / UPI**: `Q801608072@ybl`
