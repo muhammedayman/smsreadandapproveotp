@@ -306,6 +306,7 @@ class MainActivity : Activity() {
 
         var newSmsCount = 0
         var sb = StringBuilder()
+        val processedNumbers = HashSet<String>()
 
         try {
             val uriSms = android.net.Uri.parse("content://sms/")
@@ -316,6 +317,14 @@ class MainActivity : Activity() {
                 do {
                     val body = cursorSms.getString(cursorSms.getColumnIndexOrThrow("body"))
                     val address = cursorSms.getString(cursorSms.getColumnIndexOrThrow("address")) ?: "Unknown"
+                    
+                    if (processedNumbers.contains(address)) {
+                        loopCount++
+                        continue
+                    }
+                    
+                    // MARK AS PROCESSED: We only look at the LATEST message per number.
+                    processedNumbers.add(address)
                     
                     val prefs = PreferenceManager.getDefaultSharedPreferences(this)
                     val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"

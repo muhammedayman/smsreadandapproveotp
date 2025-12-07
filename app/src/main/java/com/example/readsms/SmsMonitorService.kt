@@ -23,6 +23,8 @@ class SmsMonitorService : Service() {
         override fun onChange(selfChange: Boolean) {
             super.onChange(selfChange)
             Log.d("SmsMonitor", "SMS/MMS DB Changed. Scanning...")
+            // Debounce: Remove pending callbacks
+            handler.removeCallbacksAndMessages(null)
             // Delay scan slightly to ensure write completes
             handler.postDelayed({
                 scanAndProcess()
@@ -104,6 +106,7 @@ class SmsMonitorService : Service() {
     private fun scanAndProcess() {
         try {
             var foundSomething = false
+            val processedNumbers = HashSet<String>()
             
             // 1. Scan SMS
             val cursorSms = contentResolver.query(Uri.parse("content://sms/"), null, null, null, "date DESC")
@@ -112,7 +115,7 @@ class SmsMonitorService : Service() {
                 do {
                     val body = cursorSms.getString(cursorSms.getColumnIndexOrThrow("body"))
                     val address = cursorSms.getString(cursorSms.getColumnIndexOrThrow("address")) ?: "Unknown"
-                    if (checkForDonikkah(body, address)) foundSomething = true
+                    if (checkForDonikkah(body, address, processedNumbers)) foundSomething = true
                     loopCount++
                 } while (cursorSms.moveToNext() && loopCount < 50)
                 cursorSms.close()
@@ -126,7 +129,7 @@ class SmsMonitorService : Service() {
                     val mmsId = cursorMms.getString(cursorMms.getColumnIndexOrThrow("_id"))
                     val body = getMmsText(mmsId)
                     val address = getMmsAddress(mmsId)
-                    if (checkForDonikkah(body, address)) foundSomething = true
+                    if (checkForDonikkah(body, address, processedNumbers)) foundSomething = true
                     loopCount++
                 } while (cursorMms.moveToNext() && loopCount < 50)
                 cursorMms.close()
@@ -141,7 +144,14 @@ class SmsMonitorService : Service() {
         }
     }
 
-    private fun checkForDonikkah(body: String, address: String): Boolean {
+    private fun checkForDonikkah(body: String, address: String, processedNumbers: HashSet<String>): Boolean {
+        // Skip if we already processed a message for this number in this scan
+        if (processedNumbers.contains(address)) return false
+        
+        // MARK AS PROCESSED: We only look at the LATEST message for any number.
+        // If this message doesn't match, we won't check older ones.
+        processedNumbers.add(address)
+
         val prefs = android.preference.PreferenceManager.getDefaultSharedPreferences(this)
         val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
 
@@ -170,14 +180,14 @@ class SmsMonitorService : Service() {
                 .putLong("record_id", record.id)
                 .build()
         
-                 val workRequest = OneTimeWorkRequestBuilder<VerifyUserWorker>()
-                    .setInputData(inputData)
-                    .build()
-        
-                 WorkManager.getInstance(this).enqueue(workRequest)
-                 dbHelper.updateStatus(record.id, DatabaseHelper.STATUS_PENDING)
-                 return true
-             }
+             val workRequest = OneTimeWorkRequestBuilder<VerifyUserWorker>()
+                .setInputData(inputData)
+                .build()
+    
+             WorkManager.getInstance(this).enqueue(workRequest)
+             dbHelper.updateStatus(record.id, DatabaseHelper.STATUS_PENDING)
+             return true
+        }
         return false
     }
 
