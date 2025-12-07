@@ -40,16 +40,25 @@ class MainActivity : Activity() {
 
     private val apiDebugReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
+            // DEBUG TOAST
+            android.widget.Toast.makeText(context, "Debug Broadcast Received!", android.widget.Toast.LENGTH_SHORT).show()
+            
             if (intent?.action == "com.example.readsms.API_DEBUG") {
                 val payload = intent.getStringExtra("payload")
                 val code = intent.getIntExtra("response_code", 0)
                 val body = intent.getStringExtra("response_body")
                 
-                android.app.AlertDialog.Builder(this@MainActivity)
-                    .setTitle("API Debug ($code)")
-                    .setMessage("Payload:\n$payload\n\nResponse:\n$body")
-                    .setPositiveButton("OK", null)
-                    .show()
+                if (code == 100) {
+                    // Just started
+                     android.widget.Toast.makeText(context, "Worker Started...", android.widget.Toast.LENGTH_SHORT).show()
+                } else {
+                    // Result or Error
+                    android.app.AlertDialog.Builder(this@MainActivity)
+                        .setTitle("API Debug ($code)")
+                        .setMessage("Payload:\n$payload\n\nResponse:\n$body")
+                        .setPositiveButton("OK", null)
+                        .show()
+                }
             }
         }
     }
@@ -111,6 +120,20 @@ class MainActivity : Activity() {
             scanButton.setOnClickListener {
                  scanInbox()
             }
+            scanButton.setOnLongClickListener {
+                val debugIntent = Intent("com.example.readsms.API_DEBUG")
+                debugIntent.setPackage(applicationContext.packageName)
+                debugIntent.putExtra("payload", "TEST PAYLOAD: Manual Trigger")
+                debugIntent.putExtra("response_code", 200)
+                debugIntent.putExtra("response_body", "{ 'status': 'success', 'message': 'Test Response' }")
+                sendBroadcast(debugIntent)
+                
+                // ALSO USE STATIC BUS
+                DebugRepository.log("TEST PAYLOAD: Manual Trigger", 200, "{ 'status': 'success', 'message': 'Test Response (Static)' }")
+                
+                android.widget.Toast.makeText(this, "Sending Test...", android.widget.Toast.LENGTH_SHORT).show()
+                true
+            }
             
             try {
                 findViewById<Button>(R.id.btnSettings).setOnClickListener {
@@ -143,7 +166,9 @@ class MainActivity : Activity() {
             try {
                 registerReceiver(refreshReceiver, IntentFilter("com.example.readsms.UPDATE_LIST"))
                 ContextCompat.registerReceiver(this, apiDebugReceiver, IntentFilter("com.example.readsms.API_DEBUG"), ContextCompat.RECEIVER_NOT_EXPORTED)
+                android.widget.Toast.makeText(this, "Receiver Registered", android.widget.Toast.LENGTH_SHORT).show()
             } catch (e: Exception) {
+                 android.widget.Toast.makeText(this, "Receiver Err: ${e.message}", android.widget.Toast.LENGTH_LONG).show()
                  android.util.Log.e("CRASH_REPORT", "Receiver Error", e)
             }
         } catch (e: Exception) {
@@ -166,6 +191,23 @@ class MainActivity : Activity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
+        
+        // STATIC DEBUG LISTENER
+        DebugRepository.setListener(object : DebugRepository.DebugListener {
+            override fun onLog(payload: String, responseCode: Int, responseBody: String) {
+                runOnUiThread {
+                    if (responseCode == 100) {
+                         android.widget.Toast.makeText(this@MainActivity, "Worker Started...", android.widget.Toast.LENGTH_SHORT).show()
+                    } else {
+                        android.app.AlertDialog.Builder(this@MainActivity)
+                            .setTitle("API Debug ($responseCode)")
+                            .setMessage("Payload:\n$payload\n\nResponse:\n$responseBody")
+                            .setPositiveButton("OK", null)
+                            .show()
+                    }
+                }
+            }
+        })
     }
 
     override fun onPause() {
@@ -175,6 +217,7 @@ class MainActivity : Activity() {
         } catch (e: Exception) {
             e.printStackTrace()
         }
+        DebugRepository.setListener(null)
     }
 
     override fun onDestroy() {
@@ -185,6 +228,7 @@ class MainActivity : Activity() {
         } catch (e: Exception) {
             // Receiver might not have been registered if onCreate failed or redirected
         }
+        DebugRepository.setListener(null)
     }
 
     private fun loadRecords() {

@@ -36,7 +36,8 @@
         android:label="ReadSmsApp"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
 
         <!-- Temporary Diagnosis Activity -->
         <activity
