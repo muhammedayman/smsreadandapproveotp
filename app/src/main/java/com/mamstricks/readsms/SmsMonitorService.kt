@@ -162,9 +162,19 @@ class SmsMonitorService : Service() {
              // Extract group 1 (the code) instead of the whole match
              val code = if (matcher.find()) matcher.group(1) else body
              
-             // IGNORE IF ALREADY VERIFIED
-             if (dbHelper.isNumberVerified(address)) {
-                 android.util.Log.d("SmsMonitor", "Ignored verified number: $address")
+             // IGNORE IF ALREADY VERIFIED OR EXISTS WITH SAME CODE
+             val lastRecord = dbHelper.getLastRecord(address)
+             
+             // Case 1: Already Verified -> Skip
+             if (lastRecord != null && lastRecord.status == DatabaseHelper.STATUS_SUCCESS) {
+                  android.util.Log.d("SmsMonitor", "Ignored verified number: $address")
+                  return false
+             }
+             
+             // Case 2: Exists AND Code Matches -> Skip (Prevent Loop)
+             // User must click 'Resend' manually if they want to retry
+             if (lastRecord != null && lastRecord.code == code) {
+                 android.util.Log.d("SmsMonitor", "Ignored duplicate code for: $address")
                  return false
              }
              

@@ -123,4 +123,27 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         // db.close() - Keep open for concurrency
         return list
     }
+
+    fun getLastRecord(phone: String): SmsRecord? {
+        val db = this.readableDatabase
+        val cursor = db.query(
+            TABLE_SMS, 
+            null, 
+            "$COLUMN_PHONE = ?", 
+            arrayOf(phone), 
+            null, null, null
+        )
+
+        var record: SmsRecord? = null
+        if (cursor != null && cursor.moveToFirst()) {
+            val id = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_ID))
+            val code = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_CODE))
+            val phoneNum = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_PHONE))
+            val status = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_STATUS))
+            val timestamp = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_TIMESTAMP))
+            record = SmsRecord(id, code, phoneNum, status, timestamp)
+        }
+        cursor?.close()
+        return record
+    }
 }
