@@ -72,6 +72,10 @@
         "source": "com.mamstricks.readsms.app-main-23:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
+        "merged": "com.mamstricks.readsms.app-release-22:/drawable_ic_menu.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/drawable/ic_menu.xml"
+    },
+    {
         "merged": "com.mamstricks.readsms.app-release-22:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
         "source": "com.mamstricks.readsms.app-main-23:/mipmap-hdpi/ic_launcher_foreground.webp"
     },

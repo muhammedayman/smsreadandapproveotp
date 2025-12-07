@@ -2,12 +2,12 @@
     name="release"
     useSupportLibraryVectorDrawables="true"
     package="com.mamstricks.readsms"
-    minSdkVersion="14"
+    minSdkVersion="21"
     targetSdkVersion="34"
     mergedManifest="build\intermediates\merged_manifest\release\processReleaseMainManifest\AndroidManifest.xml"
     proguardFiles="build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.11.2;proguard-rules.pro"
     partialResultsDir="build\intermediates\lint_vital_partial_results\release\lintVitalAnalyzeRelease\out"
-    desugaredMethodsFiles="C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d137cd8e6bff283647da06b5020302aa\transformed\D8BackportedDesugaredMethods.txt">
+    desugaredMethodsFiles="C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\fc76e5f640e282e140e4c24502a2eb09\transformed\D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -27,6 +27,6 @@
       applicationId="com.mamstricks.readsms"
       generatedSourceFolders="build\generated\ap_generated_sources\release\out"
       generatedResourceFolders="build\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d137cd8e6bff283647da06b5020302aa\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\fc76e5f640e282e140e4c24502a2eb09\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>
