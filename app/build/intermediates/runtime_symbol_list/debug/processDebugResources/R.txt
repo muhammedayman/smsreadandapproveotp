@@ -355,6 +355,7 @@ int color androidx_core_ripple_material_light 0x7f05001b
 int color androidx_core_secondary_text_default_material_light 0x7f05001c
 int color background_floating_material_dark 0x7f05001d
 int color background_floating_material_light 0x7f05001e
+int color background_light 0x7f050057
 int color background_material_dark 0x7f05001f
 int color background_material_light 0x7f050020
 int color bright_foreground_disabled_material_dark 0x7f050021
@@ -365,10 +366,14 @@ int color bright_foreground_material_dark 0x7f050025
 int color bright_foreground_material_light 0x7f050026
 int color button_material_dark 0x7f050027
 int color button_material_light 0x7f050028
+int color colorAccent 0x7f050058
+int color colorPrimary 0x7f050059
+int color colorPrimaryDark 0x7f05005a
 int color dim_foreground_disabled_material_dark 0x7f050029
 int color dim_foreground_disabled_material_light 0x7f05002a
 int color dim_foreground_material_dark 0x7f05002b
 int color dim_foreground_material_light 0x7f05002c
+int color divider 0x7f05005b
 int color error_color_material_dark 0x7f05002d
 int color error_color_material_light 0x7f05002e
 int color foreground_material_dark 0x7f05002f
@@ -403,12 +408,18 @@ int color secondary_text_default_material_dark 0x7f05004b
 int color secondary_text_default_material_light 0x7f05004c
 int color secondary_text_disabled_material_dark 0x7f05004d
 int color secondary_text_disabled_material_light 0x7f05004e
+int color status_failed 0x7f05005c
+int color status_pending 0x7f05005d
+int color status_success 0x7f05005e
+int color surface_card 0x7f05005f
 int color switch_thumb_disabled_material_dark 0x7f05004f
 int color switch_thumb_disabled_material_light 0x7f050050
 int color switch_thumb_material_dark 0x7f050051
 int color switch_thumb_material_light 0x7f050052
 int color switch_thumb_normal_material_dark 0x7f050053
 int color switch_thumb_normal_material_light 0x7f050054
+int color text_primary 0x7f050060
+int color text_secondary 0x7f050061
 int color tooltip_background_dark 0x7f050055
 int color tooltip_background_light 0x7f050056
 int dimen abc_action_bar_content_inset_material 0x7f060000
@@ -610,6 +621,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f07004b
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f07004c
 int drawable abc_textfield_search_material 0x7f07004d
 int drawable abc_vector_test 0x7f07004e
+int drawable bg_card 0x7f070067
 int drawable btn_checkbox_checked_mtrl 0x7f07004f
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f070050
 int drawable btn_checkbox_unchecked_mtrl 0x7f070051
@@ -820,6 +832,8 @@ int id titleDividerNoCustom 0x7f0800b4
 int id title_template 0x7f0800b5
 int id top 0x7f0800b6
 int id topPanel 0x7f0800b7
+int id tvHeaderPreview 0x7f0800c7
+int id tvPayloadPreview 0x7f0800c8
 int id tvPermissionStatus 0x7f0800c6
 int id unchecked 0x7f0800b8
 int id uniform 0x7f0800b9
@@ -1080,6 +1094,7 @@ int style Base_Widget_AppCompat_TextView 0x7f0d009e
 int style Base_Widget_AppCompat_TextView_SpinnerItem 0x7f0d009f
 int style Base_Widget_AppCompat_Toolbar 0x7f0d00a0
 int style Base_Widget_AppCompat_Toolbar_Button_Navigation 0x7f0d00a1
+int style CardStyle 0x7f0d015f
 int style Platform_AppCompat 0x7f0d00a2
 int style Platform_AppCompat_Light 0x7f0d00a3
 int style Platform_ThemeOverlay_AppCompat 0x7f0d00a4

@@ -25,12 +25,20 @@ class ConfigActivity : Activity() {
 
             val etApiUrl = findViewById<EditText>(R.id.etApiUrl)
             val etPayload = findViewById<EditText>(R.id.etPayload)
-            val etHeaderKey1 = findViewById<EditText>(R.id.etHeaderKey1)
+            val etHeaderKey1 = findViewById<android.widget.AutoCompleteTextView>(R.id.etHeaderKey1)
             val etHeaderVal1 = findViewById<EditText>(R.id.etHeaderVal1)
-            val etHeaderKey2 = findViewById<EditText>(R.id.etHeaderKey2)
+            val etHeaderKey2 = findViewById<android.widget.AutoCompleteTextView>(R.id.etHeaderKey2)
             val etHeaderVal2 = findViewById<EditText>(R.id.etHeaderVal2)
+            val tvHeaderPreview = findViewById<android.widget.TextView>(R.id.tvHeaderPreview)
+            val tvPayloadPreview = findViewById<android.widget.TextView>(R.id.tvPayloadPreview)
             val etKeyword = findViewById<EditText>(R.id.etKeyword)
             val btnSave = findViewById<Button>(R.id.btnSave)
+
+            // Suggestions
+            val headerSuggestions = arrayOf("Authorization", "x-api-key", "Content-Type", "Accept", "User-Agent")
+            val adapter = android.widget.ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, headerSuggestions)
+            etHeaderKey1.setAdapter(adapter)
+            etHeaderKey2.setAdapter(adapter)
 
             // Load existing prefs
             val prefs = PreferenceManager.getDefaultSharedPreferences(this)
@@ -43,6 +51,46 @@ class ConfigActivity : Activity() {
             etKeyword.setText(prefs.getString("keyword", "DONIKKAH"))
 
             checkPermissions()
+
+            // Preview Logic
+            fun updatePreview() {
+                // Header Preview
+                val sb = StringBuilder()
+                sb.append("Content-Type: application/json\n") // Default
+                
+                val k1 = etHeaderKey1.text.toString().trim()
+                val v1 = etHeaderVal1.text.toString().trim()
+                if (k1.isNotEmpty()) sb.append("$k1: $v1\n")
+
+                val k2 = etHeaderKey2.text.toString().trim()
+                val v2 = etHeaderVal2.text.toString().trim()
+                if (k2.isNotEmpty()) sb.append("$k2: $v2\n")
+                
+                tvHeaderPreview.text = sb.toString().trimEnd()
+
+                // Payload Preview
+                val template = etPayload.text.toString()
+                val examplePayload = template
+                    .replace("%code%", "123456")
+                    .replace("%phone%", "+1234567890")
+                tvPayloadPreview.text = examplePayload
+            }
+            
+            // Watchers
+            val watcher = object : android.text.TextWatcher {
+                override fun afterTextChanged(s: android.text.Editable?) = updatePreview()
+                override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            }
+            
+            etHeaderKey1.addTextChangedListener(watcher)
+            etHeaderVal1.addTextChangedListener(watcher)
+            etHeaderKey2.addTextChangedListener(watcher)
+            etHeaderVal2.addTextChangedListener(watcher)
+            etPayload.addTextChangedListener(watcher)
+            
+            // Initial update
+            updatePreview()
 
             btnGrantPermission.setOnClickListener {
                 requestSmsPermissions()

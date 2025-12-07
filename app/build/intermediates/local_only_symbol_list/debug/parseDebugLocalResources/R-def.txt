@@ -1,5 +1,17 @@
 R_DEF: Internal format may change without notice
 local
+color background_light
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+color divider
+color status_failed
+color status_pending
+color status_success
+color surface_card
+color text_primary
+color text_secondary
+drawable bg_card
 drawable item_background
 id btnAbout
 id btnGrantPermission
@@ -21,6 +33,8 @@ id statusText
 id textCode
 id textPhone
 id textStatus
+id tvHeaderPreview
+id tvPayloadPreview
 id tvPermissionStatus
 layout activity_about
 layout activity_config
@@ -28,5 +42,6 @@ layout activity_main
 layout list_item_sms
 string app_name
 style AppTheme
+style CardStyle
 xml backup_rules
 xml data_extraction_rules

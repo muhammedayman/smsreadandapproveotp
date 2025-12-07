@@ -78,6 +78,7 @@ class VerifyUserWorker(context: Context, params: WorkerParameters) : Worker(cont
             val requestBuilder = Request.Builder()
                 .url(apiUrl)
                 .post(body)
+                .addHeader("Content-Type", "application/json")
                 
             // Add Headers
             val hk1 = prefs.getString("header_key_1", "") ?: ""

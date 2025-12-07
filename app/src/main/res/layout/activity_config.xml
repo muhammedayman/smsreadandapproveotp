@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/background_light">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,145 +14,258 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="App Configuration"
-            android:textSize="24sp"
+            android:text="Configuration"
+            android:textSize="28sp"
             android:textStyle="bold"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"/>
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="24dp"/>
 
         <!-- PERMISSION SECTION -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Permissions Status"
-            android:textStyle="bold"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
             android:layout_marginBottom="16dp">
             
             <TextView
-                android:id="@+id/tvPermissionStatus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Checking..."
-                android:textColor="#F44336"/>
-
-            <Button
-                android:id="@+id/btnGrantPermission"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Grant"/>
+                android:text="Permissions"
+                android:textColor="@color/text_secondary"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                
+                <TextView
+                    android:id="@+id/tvPermissionStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Checking..."
+                    android:textSize="16sp"
+                    android:textColor="#F44336"/>
+
+                <Button
+                    android:id="@+id/btnGrantPermission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GRANT"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#CCCCCC"
-            android:layout_marginBottom="16dp"/>
 
+        <!-- API SETTINGS -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1. API URL"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/etApiUrl"
+            android:text="API Settings"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+            
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="https://example.com/api"
-            android:inputType="textUri"/>
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2. JSON Payload Template"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Use %code% and %phone% as placeholders"
-            android:textSize="12sp"
-            android:textColor="#666666"/>
-        <EditText
-            android:id="@+id/etPayload"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="{ 'data': '%code%' }"
-            android:minLines="2"
-            android:inputType="textMultiLine"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="API URL"
+                android:textColor="@color/text_secondary"/>
+            <EditText
+                android:id="@+id/etApiUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="https://example.com/api"
+                android:inputType="textUri"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3. Header 1 Key"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/etHeaderKey1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Authorization"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JSON Payload Template"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Variables: %code%, %phone%"
+                android:textSize="10sp"
+                android:textColor="#999"/>
+            <EditText
+                android:id="@+id/etPayload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="{ &quot;data&quot;: &quot;%code%&quot; }"
+                android:minLines="2"
+                android:inputType="textMultiLine"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4. Header 1 Value"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/etHeaderVal1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Bearer token123"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payload Preview (Example):"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/tvPayloadPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="{ &quot;data&quot;: &quot;123456&quot; }"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:background="#F5F5F5"
+                android:padding="8dp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
 
+        <!-- HEADERS -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5. Header 2 Key (Optional)"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/etHeaderKey2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Content-Type"/>
+            android:text="Headers (Optional)"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="6. Header 2 Value (Optional)"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/etHeaderVal2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="application/json"/>
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Header 1"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:id="@+id/etHeaderKey1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Key (e.g. Authorization)"
+                    android:completionThreshold="1"/>
+                <EditText
+                    android:id="@+id/etHeaderVal1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Value"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Header 2"
+                android:textStyle="bold"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:id="@+id/etHeaderKey2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Key"
+                    android:completionThreshold="1"/>
+                <EditText
+                    android:id="@+id/etHeaderVal2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Value"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Preview:"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"/>
+            <TextView
+                android:id="@+id/tvHeaderPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Content-Type: application/json"
+                android:fontFamily="monospace"
+                android:textSize="12sp"
+                android:background="#F5F5F5"
+                android:padding="8dp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- FILTER -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7. SMS Keyword to Scan"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"/>
-        <EditText
-            android:id="@+id/etKeyword"
+            android:text="Filters"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="DONIKKAH"/>
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS Keyword to Scan"
+                android:textColor="@color/text_secondary"/>
+            <EditText
+                android:id="@+id/etKeyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DONIKKAH"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
 
         <Button
             android:id="@+id/btnSave"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save and Start App"
-            android:layout_marginTop="24dp"
-            android:padding="16dp"
-            android:textSize="18sp"/>
+            android:layout_height="60dp"
+            android:text="SAVE CONFIGURATION"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp"/>
 
     </LinearLayout>
 </ScrollView>

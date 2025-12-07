@@ -30,5 +30,9 @@
     {
         "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\drawable_item_background.xml.flat",
         "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\drawable\\item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\drawable\\bg_card.xml"
     }
 ]

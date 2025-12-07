@@ -3,88 +3,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/background_light">
 
+    <!-- Header Area -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:elevation="4dp"
         android:orientation="vertical"
-        android:gravity="center"
-        android:padding="8dp">
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Monitor"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"/>
 
         <TextView
             android:id="@+id/statusText"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Waiting for SMS Permission..."
-            android:textSize="16sp"
-            android:gravity="center"
-            android:textAlignment="center"/>
+            android:text="Status: Active"
+            android:textColor="#B3E5FC"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-
-        <Button
-            android:id="@+id/scanButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Scan Inbox Now"
-            android:layout_marginTop="8dp"/>
-            
+        <!-- Action Grid -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2"
-            android:layout_marginTop="8dp">
+            android:layout_marginBottom="12dp">
 
             <Button
-                android:id="@+id/btnSettings"
+                android:id="@+id/scanButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:layout_weight="1"
-                android:text="Settings"/>
+                android:text="SCAN INBOX"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/colorPrimary"/>
             
-            <Button
-                android:id="@+id/btnAbout"
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="About"/>
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <Button
+                    android:id="@+id/btnSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="SETTINGS"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="@color/text_secondary"/>
+                
+                <Button
+                    android:id="@+id/btnAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="ABOUT"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="@color/text_secondary"
+                    android:visibility="gone"/> <!-- Hiding About for now to clean UI -->
+            </LinearLayout>
         </LinearLayout>
         
         <!-- TABS -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_marginTop="8dp">
+            android:background="@drawable/bg_card"
+            android:padding="2dp"
+            android:layout_marginBottom="12dp">
 
             <Button
                 android:id="@+id/btnTabPending"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#FF5722"
-                android:text="Pending"/>
+                android:backgroundTint="@color/status_pending"
+                android:text="Pending"
+                android:textColor="#FFFFFF"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"/>
             
+            <Space android:layout_width="2dp" android:layout_height="wrap_content"/>
+
             <Button
                 android:id="@+id/btnTabVerified"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#4CAF50"
-                android:text="Verified"/>
+                android:backgroundTint="@color/status_success"
+                android:text="Verified"
+                android:textColor="#FFFFFF"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"/>
         </LinearLayout>
-    </LinearLayout>
 
-    <ListView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="8dp"
-        android:divider="@null"
-        android:dividerHeight="4dp"/>
+        <ListView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="8dp"
+            android:drawSelectorOnTop="false"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
