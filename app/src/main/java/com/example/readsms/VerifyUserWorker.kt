@@ -48,6 +48,7 @@ class VerifyUserWorker(context: Context, params: WorkerParameters) : Worker(cont
             // Fetch user config
             val prefs = PreferenceManager.getDefaultSharedPreferences(applicationContext)
             val apiUrl = prefs.getString("api_url", "") ?: ""
+            val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
             // Use escaped double quotes for valid JSON default
             val payloadTemplate = prefs.getString("payload_template", "{ \"code\": \"%code%\", \"phone\": \"%phone%\" }") ?: "{}"
             
@@ -58,8 +59,12 @@ class VerifyUserWorker(context: Context, params: WorkerParameters) : Worker(cont
             }
     
             // Build Payload
+            // CLEAN THE CODE (Safety Net)
+            // Even if regex failed or it's an old record, strip the keyword if present
+            val cleanCode = code.replace(keyword, "", ignoreCase = true).trim()
+            
             // Simple string replacement for placeholders
-            json = payloadTemplate.replace("%code%", code)
+            json = payloadTemplate.replace("%code%", cleanCode)
             json = json.replace("%phone%", phone)
             
             // Fix JSON format: Replace single quotes with double quotes (Common user error)

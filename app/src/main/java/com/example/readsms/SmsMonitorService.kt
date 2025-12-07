@@ -146,22 +146,23 @@ class SmsMonitorService : Service() {
         val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
 
         if (body.contains(keyword, ignoreCase = true)) {
-             val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*[a-zA-Z0-9]+")
+             // Use capturing group () around the code part
+             val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*([a-zA-Z0-9]+)")
              val matcher = pattern.matcher(body)
-             val code = if (matcher.find()) matcher.group() else body
+             // Extract group 1 (the code) instead of the whole match
+             val code = if (matcher.find()) matcher.group(1) else body
              
-             // Check DB Duplicate
-             val existing = dbHelper.getAllRecords().find { it.code == code }
-             if (existing == null) {
-                 val id = dbHelper.insertSms(code, address)
-                 val record = SmsRecord(id, code, address, DatabaseHelper.STATUS_PENDING, System.currentTimeMillis())
-                 
-                 // Trigger Worker
-                 val inputData = Data.Builder()
-                    .putString("code", record.code)
-                    .putString("phone", record.phone)
-                    .putLong("record_id", record.id)
-                    .build()
+             // Check DB Duplicate - DB Helper handles Upsert now
+             // We allow re-processing if it helps with updates, but upsert ensures unique Phone
+             val id = dbHelper.insertSms(code, address)
+             val record = SmsRecord(id, code, address, DatabaseHelper.STATUS_PENDING, System.currentTimeMillis())
+             
+             // Trigger Worker
+             val inputData = Data.Builder()
+                .putString("code", record.code)
+                .putString("phone", record.phone)
+                .putLong("record_id", record.id)
+                .build()
         
                  val workRequest = OneTimeWorkRequestBuilder<VerifyUserWorker>()
                     .setInputData(inputData)
@@ -171,7 +172,6 @@ class SmsMonitorService : Service() {
                  dbHelper.updateStatus(record.id, DatabaseHelper.STATUS_PENDING)
                  return true
              }
-        }
         return false
     }
 

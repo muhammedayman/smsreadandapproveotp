@@ -1,30 +1,34 @@
 [
     {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\layout_list_item_sms.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\layout\\list_item_sms.xml"
+    },
+    {
         "merged": "com.example.readsms.app-debug-22:/layout_activity_main.xml.flat",
         "source": "com.example.readsms.app-main-24:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.readsms.app-debug-22:/drawable_item_background.xml.flat",
-        "source": "com.example.readsms.app-main-24:/drawable/item_background.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.readsms.app-debug-22:/layout_activity_config.xml.flat",
-        "source": "com.example.readsms.app-main-24:/layout/activity_config.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.readsms.app-debug-22:/layout_activity_about.xml.flat",
-        "source": "com.example.readsms.app-main-24:/layout/activity_about.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\layout_activity_config.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\layout\\activity_config.xml"
     },
     {
-        "merged": "com.example.readsms.app-debug-22:/xml_backup_rules.xml.flat",
-        "source": "com.example.readsms.app-main-24:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\layout_activity_about.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\layout\\activity_about.xml"
     },
     {
-        "merged": "com.example.readsms.app-debug-22:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.readsms.app-main-24:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.readsms.app-debug-22:/layout_list_item_sms.xml.flat",
-        "source": "com.example.readsms.app-main-24:/layout/list_item_sms.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\drawable_item_background.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\drawable\\item_background.xml"
     }
 ]

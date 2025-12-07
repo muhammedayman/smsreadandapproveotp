@@ -56,6 +56,31 @@
                 android:layout_weight="1"
                 android:text="About"/>
         </LinearLayout>
+        
+        <!-- TABS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnTabPending"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#FF5722"
+                android:text="Pending"/>
+            
+            <Button
+                android:id="@+id/btnTabVerified"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:text="Verified"/>
+        </LinearLayout>
     </LinearLayout>
 
     <ListView

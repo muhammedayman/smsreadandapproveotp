@@ -703,6 +703,8 @@ int id btnAbout 0x7f080041
 int id btnResend 0x7f080042
 int id btnSave 0x7f080043
 int id btnSettings 0x7f080044
+int id btnTabPending 0x7f0800c3
+int id btnTabVerified 0x7f0800c4
 int id buttonPanel 0x7f080045
 int id center_vertical 0x7f080046
 int id checkbox 0x7f080047

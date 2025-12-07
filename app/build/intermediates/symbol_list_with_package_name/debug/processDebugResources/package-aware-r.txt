@@ -704,6 +704,8 @@ id btnAbout
 id btnResend
 id btnSave
 id btnSettings
+id btnTabPending
+id btnTabVerified
 id buttonPanel
 id center_vertical
 id checkbox

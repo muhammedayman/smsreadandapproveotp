@@ -38,15 +38,42 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
     }
 
     fun insertSms(code: String, phone: String): Long {
+        // Legacy support - redirection to upsert to ensure uniqueness
+        return upsertSms(code, phone)
+    }
+
+    fun upsertSms(code: String, phone: String): Long {
         val db = this.writableDatabase
         val values = ContentValues()
         values.put(COLUMN_CODE, code)
         values.put(COLUMN_PHONE, phone)
-        values.put(COLUMN_STATUS, STATUS_PENDING)
+        values.put(COLUMN_STATUS, STATUS_PENDING) // Reset to Pending for new code
         values.put(COLUMN_TIMESTAMP, System.currentTimeMillis())
-        val id = db.insert(TABLE_SMS, null, values)
-        // db.close() - Keep open for concurrency
-        return id
+
+        // Check if phone exists
+        val cursor = db.query(TABLE_SMS, arrayOf(COLUMN_ID), "$COLUMN_PHONE = ?", arrayOf(phone), null, null, null)
+        
+        if (cursor != null && cursor.moveToFirst()) {
+             // UPDATE existing
+             val id = cursor.getLong(cursor.getColumnIndexOrThrow(COLUMN_ID))
+             cursor.close()
+             db.update(TABLE_SMS, values, "$COLUMN_ID = ?", arrayOf(id.toString()))
+             return id
+        } else {
+             // INSERT new
+             cursor?.close()
+             return db.insert(TABLE_SMS, null, values)
+        }
+    }
+    
+    fun deduplicate() {
+        val db = this.writableDatabase
+        try {
+            // Keep only the LATEST record for each phone number (using MAX(_id))
+            db.execSQL("DELETE FROM $TABLE_SMS WHERE $COLUMN_ID NOT IN (SELECT MAX($COLUMN_ID) FROM $TABLE_SMS GROUP BY $COLUMN_PHONE)")
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     fun updateStatus(id: Long, status: String) {

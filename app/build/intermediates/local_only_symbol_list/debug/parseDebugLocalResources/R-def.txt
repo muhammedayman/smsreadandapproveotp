@@ -5,6 +5,8 @@ id btnAbout
 id btnResend
 id btnSave
 id btnSettings
+id btnTabPending
+id btnTabVerified
 id etApiUrl
 id etHeaderKey1
 id etHeaderKey2
