@@ -12,6 +12,7 @@ import android.preference.PreferenceManager
 import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.work.Data
@@ -21,7 +22,7 @@ import com.mamstricks.readsms.db.DatabaseHelper
 import com.mamstricks.readsms.db.SmsRecord
 import com.mamstricks.readsms.ui.SmsAdapter
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
 
     private val SMS_PERMISSION_CODE = 100
     private lateinit var statusText: TextView
@@ -173,11 +174,22 @@ class MainActivity : Activity() {
                     startActivity(Intent(this, ConfigActivity::class.java))
                 }
                 
-                findViewById<Button>(R.id.btnAbout)?.setOnClickListener {
-                    try {
-                         // startActivity(Intent(this, AboutActivity::class.java)) // AboutActivity not created yet?
-                         android.widget.Toast.makeText(this, "About Page", android.widget.Toast.LENGTH_SHORT).show()
-                    } catch(e: Exception) {}
+                // Menu Button Logic
+                findViewById<android.widget.ImageButton>(R.id.btnMenu).setOnClickListener { view ->
+                    val popup = android.widget.PopupMenu(this, view)
+                    popup.menu.add("About")
+                    popup.setOnMenuItemClickListener { item ->
+                        if (item.title == "About") {
+                            try {
+                                 val intent = Intent(this@MainActivity, AboutActivity::class.java)
+                                 startActivity(intent)
+                            } catch(e: Exception) {
+                                 android.widget.Toast.makeText(this, "Error opening About: ${e.message}", android.widget.Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                        true
+                    }
+                    popup.show()
                 }
             } catch (e: Exception) {
                 statusText.text = "Button Error: ${e.message}"

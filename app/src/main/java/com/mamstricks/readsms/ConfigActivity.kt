@@ -1,6 +1,6 @@
 package com.mamstricks.readsms
-
-import android.app.Activity
+ 
+import androidx.appcompat.app.AppCompatActivity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +8,9 @@ import android.preference.PreferenceManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-
-class ConfigActivity : Activity() {
-
+ 
+class ConfigActivity : AppCompatActivity() {
+ 
     private lateinit var tvPermissionStatus: android.widget.TextView
     private lateinit var btnGrantPermission: Button
     private val SMS_PERMISSION_CODE = 101

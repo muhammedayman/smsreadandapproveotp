@@ -83,7 +83,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="text_on_accent">#0A192F</color>
+    <color name="text_on_accent">#FFFFFF</color>
     <color name="text_primary">#0A192F</color>
     <color name="text_secondary">#546E7A</color>
     <color name="tooltip_background_dark">#e6616161</color>
@@ -318,10 +318,10 @@
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="Animation.AppCompat.Tooltip" parent="Base.Animation.AppCompat.Tooltip"/>
-    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:colorPrimary">@color/colorPrimary</item>
-        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="android:colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowBackground">@color/background_light</item>
         <item name="android:textColorPrimary">@color/text_primary</item>
     </style>
@@ -1841,13 +1841,13 @@
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="Base.Widget.AppCompat.Toolbar.Button.Navigation"/>
     <style name="Widget.Compat.NotificationActionContainer" parent=""/>
     <style name="Widget.Compat.NotificationActionText" parent=""/>
-    <style name="ZeroGateButton" parent="android:Widget.Material.Button">
-        <item name="android:backgroundTint">@color/colorAccent</item>
+    <style name="ZeroGateButton" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
         <item name="android:textColor">@color/text_on_accent</item>
         <item name="android:textStyle">bold</item>
         <item name="android:elevation">4dp</item>
     </style>
-    <style name="ZeroGateButton.Outlined" parent="android:Widget.Material.Button.Borderless">
+    <style name="ZeroGateButton.Outlined" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:backgroundTint">@android:color/transparent</item>
         <item name="android:textStyle">bold</item>

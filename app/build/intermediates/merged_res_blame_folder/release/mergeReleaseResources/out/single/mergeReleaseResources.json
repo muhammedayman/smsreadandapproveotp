@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/layout_list_item_sms.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/layout/list_item_sms.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/layout_activity_main.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/xml_data_extraction_rules.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/drawable_item_background.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/drawable/item_background.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/layout_activity_about.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/layout/activity_about.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/xml_backup_rules.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/layout_activity_config.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/layout/activity_config.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-release-22:/drawable_bg_card.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-23:/drawable/bg_card.xml"
+    }
+]

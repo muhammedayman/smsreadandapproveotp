@@ -1,17 +1,24 @@
 package com.mamstricks.readsms
 
-import android.app.Activity
 import android.os.Bundle
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
-class AboutActivity : Activity() {
+class AboutActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_about)
+
+        val tvVersion = findViewById<TextView>(R.id.tvVersion)
+        
         try {
-            setContentView(R.layout.activity_about)
+            val pInfo = packageManager.getPackageInfo(packageName, 0)
+            val version = pInfo.versionName
+            tvVersion.text = "Version $version"
         } catch (e: Exception) {
-             val tv = android.widget.TextView(this)
-             tv.text = "Error: " + e.message
-             setContentView(tv)
+            e.printStackTrace()
+            tvVersion.text = "Version Unknown"
         }
     }
 }

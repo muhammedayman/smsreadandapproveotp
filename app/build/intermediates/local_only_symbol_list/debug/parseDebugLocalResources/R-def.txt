@@ -14,10 +14,10 @@ color text_primary
 color text_secondary
 drawable bg_card
 drawable ic_launcher_background
-drawable ic_zerogate
+drawable ic_menu
 drawable item_background
-id btnAbout
 id btnGrantPermission
+id btnMenu
 id btnResend
 id btnSave
 id btnSettings
@@ -39,6 +39,7 @@ id textStatus
 id tvHeaderPreview
 id tvPayloadPreview
 id tvPermissionStatus
+id tvVersion
 layout activity_about
 layout activity_config
 layout activity_main

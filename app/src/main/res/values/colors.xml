@@ -16,5 +16,5 @@
     <color name="status_failed">#D50000</color>
     
     <!-- Button Text on Accent -->
-    <color name="text_on_accent">#0A192F</color>
+    <color name="text_on_accent">#FFFFFF</color>
 </resources>

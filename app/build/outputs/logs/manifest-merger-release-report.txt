@@ -1,0 +1,526 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-56:12
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:1-56:12
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\40630bd215171a8a4aef4ca77d42b9eb\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f3ba7c03f6c839b54f3fe0eb091f149d\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\a174bde00d9f0cb9b94151d541d29bd4\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f1830a12523f83abede6985b20b985d9\transformed\jetified-activity-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\3e94cdb004a2a91821fe5b0a89039d63\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\1b50a805a95d40ead6ca1489d83c81a9\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.work:work-runtime-ktx:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\0657f7500f8665a91531fd120da1789d\transformed\work-runtime-ktx-2.7.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bba5e4e93f49b32fd1dc1bea0a5557e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\bc954ece21c3f8c188abbe108bf3e073\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d1b125ef416935bca5058040d1a11d6c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d73a31caaa871d829d44397ad5b54473\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\8c5ff5b9bda1afeda2852f6b8e40f245\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2195da8d81837eb7fca7ea282157b174\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\c70eec3d7e0e2f88dc800eb255655402\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\816c6de90c34afd967bc0688950a2838\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2f8a1725a90c55fd6cef8bf5b20ac7df\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\8fa5256f07d937ecec2c0f24e68eab33\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\ea1e0f0d676a3d849ba0cea519910308\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6a2f69c50ba0c502bb852e2e8685e066\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\a03bef55ed70fc5291f32b13e6cb60e8\transformed\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\dedf2f492ed1734260f4d3f49c436f84\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2dbd96f0bb5705ee206c52e0d929db10\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\81db382a05070062c4d592ac7d466d4c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\55d96b187bfc6ed0358c078bacbd94a5\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\eaeed414528a538c97359a6c5ebe8997\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f96bf343a1e50a2562881601dc5ccefe\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6726f1819948422c3ddeb79ef7c107fb\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\46e1a51c79076f77a736834f2c8ba7b7\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\b47587ea1bc42ff52986f58d86d4393f\transformed\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\45fc8f3d401197cb17fe8e8109787ff9\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:5:5-69
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:5:22-67
+uses-permission#android.permission.READ_SMS
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.INTERNET
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:8:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:9:5-76
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:9:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_DATA_SYNC
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:10:5-87
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:10:22-84
+application
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:12:5-54:19
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:12:5-54:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:30:5-143:19
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:30:5-143:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2dbd96f0bb5705ee206c52e0d929db10\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2dbd96f0bb5705ee206c52e0d929db10\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\81db382a05070062c4d592ac7d466d4c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\81db382a05070062c4d592ac7d466d4c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+	android:extractNativeLibs
+		INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:20:9-41
+	android:fullBackupContent
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:17:9-54
+	android:roundIcon
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:19:9-54
+	tools:targetApi
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:23:9-29
+	android:icon
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:18:9-43
+	android:allowBackup
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:22:9-40
+	android:dataExtractionRules
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:16:9-65
+	android:usesCleartextTraffic
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:14:9-44
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:13:9-35
+activity#com.mamstricks.readsms.DiagnosisActivity
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:26:9-28:39
+	android:exported
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:27:13-46
+activity#com.mamstricks.readsms.MainActivity
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:30:9-38:20
+	android:exported
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:31:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:34:13-37:29
+action#android.intent.action.MAIN
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:36:27-74
+activity#com.mamstricks.readsms.ConfigActivity
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:9-77
+	android:exported
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:50-74
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:40:19-49
+activity#com.mamstricks.readsms.AboutActivity
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:41:9-76
+	android:exported
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:41:49-73
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:41:19-48
+receiver#com.mamstricks.readsms.SmsReceiver
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:43:9-48:20
+	android:exported
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:44:13-36
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:43:19-46
+intent-filter#action:name:android.provider.Telephony.SMS_RECEIVED
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:45:28-57
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:46:17-82
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:46:25-79
+service#com.mamstricks.readsms.SmsMonitorService
+ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:50:9-52:56
+	android:exported
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:51:13-37
+	android:foregroundServiceType
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:52:13-53
+	android:name
+		ADDED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml:50:18-51
+uses-sdk
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\40630bd215171a8a4aef4ca77d42b9eb\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\40630bd215171a8a4aef4ca77d42b9eb\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f3ba7c03f6c839b54f3fe0eb091f149d\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f3ba7c03f6c839b54f3fe0eb091f149d\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\a174bde00d9f0cb9b94151d541d29bd4\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\a174bde00d9f0cb9b94151d541d29bd4\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f1830a12523f83abede6985b20b985d9\transformed\jetified-activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f1830a12523f83abede6985b20b985d9\transformed\jetified-activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\3e94cdb004a2a91821fe5b0a89039d63\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\3e94cdb004a2a91821fe5b0a89039d63\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\1b50a805a95d40ead6ca1489d83c81a9\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\1b50a805a95d40ead6ca1489d83c81a9\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\0657f7500f8665a91531fd120da1789d\transformed\work-runtime-ktx-2.7.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\0657f7500f8665a91531fd120da1789d\transformed\work-runtime-ktx-2.7.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bba5e4e93f49b32fd1dc1bea0a5557e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bba5e4e93f49b32fd1dc1bea0a5557e\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\bc954ece21c3f8c188abbe108bf3e073\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\bc954ece21c3f8c188abbe108bf3e073\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d1b125ef416935bca5058040d1a11d6c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d1b125ef416935bca5058040d1a11d6c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d73a31caaa871d829d44397ad5b54473\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d73a31caaa871d829d44397ad5b54473\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\8c5ff5b9bda1afeda2852f6b8e40f245\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\8c5ff5b9bda1afeda2852f6b8e40f245\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2195da8d81837eb7fca7ea282157b174\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2195da8d81837eb7fca7ea282157b174\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\c70eec3d7e0e2f88dc800eb255655402\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\c70eec3d7e0e2f88dc800eb255655402\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\816c6de90c34afd967bc0688950a2838\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\816c6de90c34afd967bc0688950a2838\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2f8a1725a90c55fd6cef8bf5b20ac7df\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2f8a1725a90c55fd6cef8bf5b20ac7df\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\8fa5256f07d937ecec2c0f24e68eab33\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\8fa5256f07d937ecec2c0f24e68eab33\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\ea1e0f0d676a3d849ba0cea519910308\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\ea1e0f0d676a3d849ba0cea519910308\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6a2f69c50ba0c502bb852e2e8685e066\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6a2f69c50ba0c502bb852e2e8685e066\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\a03bef55ed70fc5291f32b13e6cb60e8\transformed\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\a03bef55ed70fc5291f32b13e6cb60e8\transformed\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\dedf2f492ed1734260f4d3f49c436f84\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\dedf2f492ed1734260f4d3f49c436f84\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2dbd96f0bb5705ee206c52e0d929db10\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\2dbd96f0bb5705ee206c52e0d929db10\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\81db382a05070062c4d592ac7d466d4c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\81db382a05070062c4d592ac7d466d4c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\55d96b187bfc6ed0358c078bacbd94a5\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\55d96b187bfc6ed0358c078bacbd94a5\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\eaeed414528a538c97359a6c5ebe8997\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\eaeed414528a538c97359a6c5ebe8997\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f96bf343a1e50a2562881601dc5ccefe\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\f96bf343a1e50a2562881601dc5ccefe\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6726f1819948422c3ddeb79ef7c107fb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6726f1819948422c3ddeb79ef7c107fb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\46e1a51c79076f77a736834f2c8ba7b7\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\46e1a51c79076f77a736834f2c8ba7b7\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\b47587ea1bc42ff52986f58d86d4393f\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\b47587ea1bc42ff52986f58d86d4393f\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\45fc8f3d401197cb17fe8e8109787ff9\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\45fc8f3d401197cb17fe8e8109787ff9\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\projects\mobile app\readsms_app\app\src\main\AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\81db382a05070062c4d592ac7d466d4c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\81db382a05070062c4d592ac7d466d4c\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\cf5ffc03f8ed4017357bc6d3291c369b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:25:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:26:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:5-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:27:22-78
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:46:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:53:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:117:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.7.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\63202e9bc2d4bff5264aa06c00ff0b7b\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.mamstricks.readsms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\d2c1d2f10fdf019a06ca188c3fbe02d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\5e009dd197718ef8a1051e1fde69103a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.5] C:\Users\ZAYA\.gradle\caches\9.0-milestone-1\transforms\6bdd710a4471f4d2a878b6867811d1c8\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
