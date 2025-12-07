@@ -28,7 +28,7 @@ class ConfigActivity : Activity() {
             // Load existing prefs
             val prefs = PreferenceManager.getDefaultSharedPreferences(this)
             etApiUrl.setText(prefs.getString("api_url", ""))
-            etPayload.setText(prefs.getString("payload_template", "{'code':'%code%', 'phone':'%phone%'}"))
+            etPayload.setText(prefs.getString("payload_template", "{ \"code\": \"%code%\", \"phone\": \"%phone%\" }"))
             etHeaderKey1.setText(prefs.getString("header_key_1", ""))
             etHeaderVal1.setText(prefs.getString("header_val_1", ""))
             etHeaderKey2.setText(prefs.getString("header_key_2", ""))

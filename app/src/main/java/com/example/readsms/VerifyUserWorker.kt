@@ -48,7 +48,8 @@ class VerifyUserWorker(context: Context, params: WorkerParameters) : Worker(cont
             // Fetch user config
             val prefs = PreferenceManager.getDefaultSharedPreferences(applicationContext)
             val apiUrl = prefs.getString("api_url", "") ?: ""
-            val payloadTemplate = prefs.getString("payload_template", "{ 'code': '%code%', 'phone': '%phone%' }") ?: "{}"
+            // Use escaped double quotes for valid JSON default
+            val payloadTemplate = prefs.getString("payload_template", "{ \"code\": \"%code%\", \"phone\": \"%phone%\" }") ?: "{}"
             
             if (apiUrl.isEmpty()) {
                 Log.e("VerifyUserWorker", "API URL is empty in settings")
@@ -60,6 +61,9 @@ class VerifyUserWorker(context: Context, params: WorkerParameters) : Worker(cont
             // Simple string replacement for placeholders
             json = payloadTemplate.replace("%code%", code)
             json = json.replace("%phone%", phone)
+            
+            // Fix JSON format: Replace single quotes with double quotes (Common user error)
+            json = json.replace("'", "\"")
     
             Log.d("VerifyUserWorker", "Sending: $json to $apiUrl")
     
