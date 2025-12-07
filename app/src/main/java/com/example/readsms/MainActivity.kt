@@ -142,12 +142,11 @@ class MainActivity : Activity() {
             
             try {
                 registerReceiver(refreshReceiver, IntentFilter("com.example.readsms.UPDATE_LIST"))
-                registerReceiver(apiDebugReceiver, IntentFilter("com.example.readsms.API_DEBUG"))
+                ContextCompat.registerReceiver(this, apiDebugReceiver, IntentFilter("com.example.readsms.API_DEBUG"), ContextCompat.RECEIVER_NOT_EXPORTED)
             } catch (e: Exception) {
                  android.util.Log.e("CRASH_REPORT", "Receiver Error", e)
             }
         } catch (e: Exception) {
-            // Fatal Setup Error - Fallback UI
             val tv = TextView(this)
             tv.text = "FATAL ERROR:\n${e.message}\n${android.util.Log.getStackTraceString(e)}"
             tv.textSize = 20f
