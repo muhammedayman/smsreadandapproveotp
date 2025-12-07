@@ -129,9 +129,23 @@ class MainActivity : Activity() {
             btnTabVerified.alpha = 0.5f
 
             try {
-                adapter = SmsAdapter(emptyList()) { record ->
-                    resendApi(record)
-                }
+                adapter = SmsAdapter(emptyList(), 
+                    onResendClick = { record ->
+                        resendApi(record)
+                    },
+                    onLongClick = { record ->
+                        android.app.AlertDialog.Builder(this)
+                            .setTitle("Delete Record?")
+                            .setMessage("Do you want to delete this record?\n\nCode: ${record.code}\nPhone: ${record.phone}")
+                            .setPositiveButton("Delete") { _, _ ->
+                                dbHelper.deleteSms(record.id)
+                                loadRecords()
+                                android.widget.Toast.makeText(this, "Record Deleted", android.widget.Toast.LENGTH_SHORT).show()
+                            }
+                            .setNegativeButton("Cancel", null)
+                            .show()
+                    }
+                )
                 listView.adapter = adapter
             } catch (e: Exception) {
                 statusText.text = "Adapter Error: ${e.message}"

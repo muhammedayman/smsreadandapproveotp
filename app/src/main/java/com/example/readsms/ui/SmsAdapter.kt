@@ -12,7 +12,8 @@ import com.example.readsms.db.SmsRecord
 
 class SmsAdapter(
     private var records: List<SmsRecord>,
-    private val onResendClick: (SmsRecord) -> Unit
+    private val onResendClick: (SmsRecord) -> Unit,
+    private val onLongClick: (SmsRecord) -> Unit
 ) : BaseAdapter() {
 
     fun updateData(newRecords: List<SmsRecord>) {
@@ -53,6 +54,11 @@ class SmsAdapter(
              holder.resendBtn.visibility = View.GONE
         } else {
              holder.resendBtn.visibility = View.VISIBLE
+        }
+        
+        view.setOnLongClickListener {
+            onLongClick(record)
+            true
         }
 
         return view

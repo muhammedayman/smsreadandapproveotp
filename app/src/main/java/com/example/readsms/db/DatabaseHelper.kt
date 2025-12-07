@@ -98,6 +98,11 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         // db.close() - Keep open for concurrency
     }
 
+    fun deleteSms(id: Long) {
+        val db = this.writableDatabase
+        db.delete(TABLE_SMS, "$COLUMN_ID = ?", arrayOf(id.toString()))
+    }
+
     fun getAllRecords(): List<SmsRecord> {
         val list = ArrayList<SmsRecord>()
         val selectQuery = "SELECT * FROM $TABLE_SMS ORDER BY $COLUMN_TIMESTAMP DESC"
