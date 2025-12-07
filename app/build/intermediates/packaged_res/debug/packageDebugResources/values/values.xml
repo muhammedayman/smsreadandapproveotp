@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background_light">#FAFAFA</color>
-    <color name="colorAccent">#424242</color>
-    <color name="colorPrimary">#212121</color>
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="divider">#EEEEEE</color>
-    <color name="status_failed">#C62828</color>
-    <color name="status_pending">#757575</color>
-    <color name="status_success">#2E7D32</color>
+    <color name="background_light">#F5F9FC</color>
+    <color name="colorAccent">#00E5FF</color>
+    <color name="colorPrimary">#0A192F</color>
+    <color name="colorPrimaryDark">#040D19</color>
+    <color name="divider">#CFD8DC</color>
+    <color name="status_failed">#D50000</color>
+    <color name="status_pending">#90A4AE</color>
+    <color name="status_success">#00C853</color>
     <color name="surface_card">#FFFFFF</color>
-    <color name="text_primary">#000000</color>
-    <color name="text_secondary">#616161</color>
-    <string name="app_name">ReadSmsApp</string>
+    <color name="text_on_accent">#0A192F</color>
+    <color name="text_primary">#0A192F</color>
+    <color name="text_secondary">#546E7A</color>
+    <string name="app_name">zeroGate</string>
     <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:colorPrimary">@color/colorPrimary</item>
         <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -24,5 +25,16 @@
         <item name="android:elevation">4dp</item>
         <item name="android:padding">12dp</item>
         <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="ZeroGateButton" parent="android:Widget.Material.Button">
+        <item name="android:backgroundTint">@color/colorAccent</item>
+        <item name="android:textColor">@color/text_on_accent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+    <style name="ZeroGateButton.Outlined" parent="android:Widget.Material.Button.Borderless">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:backgroundTint">@android:color/transparent</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

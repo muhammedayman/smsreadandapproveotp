@@ -1,34 +1,122 @@
 [
     {
-        "merged": "com.mamstricks.readsms.app-debug-22:/xml_backup_rules.xml.flat",
-        "source": "com.mamstricks.readsms.app-main-24:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "com.mamstricks.readsms.app-debug-22:/layout_activity_about.xml.flat",
-        "source": "com.mamstricks.readsms.app-main-24:/layout/activity_about.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\drawable_ic_zerogate.png.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\drawable\\ic_zerogate.png"
     },
     {
         "merged": "com.mamstricks.readsms.app-debug-22:/layout_list_item_sms.xml.flat",
         "source": "com.mamstricks.readsms.app-main-24:/layout/list_item_sms.xml"
     },
     {
-        "merged": "com.mamstricks.readsms.app-debug-22:/drawable_bg_card.xml.flat",
-        "source": "com.mamstricks.readsms.app-main-24:/drawable/bg_card.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.mamstricks.readsms.app-debug-22:/drawable_item_background.xml.flat",
-        "source": "com.mamstricks.readsms.app-main-24:/drawable/item_background.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.mamstricks.readsms.app-debug-22:/layout_activity_config.xml.flat",
-        "source": "com.mamstricks.readsms.app-main-24:/layout/activity_config.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.mamstricks.readsms.app-debug-22:/xml_data_extraction_rules.xml.flat",
-        "source": "com.mamstricks.readsms.app-main-24:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\xml\\backup_rules.xml"
     },
     {
         "merged": "com.mamstricks.readsms.app-debug-22:/layout_activity_main.xml.flat",
         "source": "com.mamstricks.readsms.app-main-24:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\layout_list_item_sms.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\layout\\list_item_sms.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\drawable\\bg_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\drawable_item_background.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\drawable\\item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\layout_activity_about.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-debug-22:\\layout_activity_config.xml.flat",
+        "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.mamstricks.readsms.app-main-24:\\layout\\activity_config.xml"
+    },
+    {
+        "merged": "com.mamstricks.readsms.app-debug-22:/layout_activity_config.xml.flat",
+        "source": "com.mamstricks.readsms.app-main-24:/layout/activity_config.xml"
     }
 ]

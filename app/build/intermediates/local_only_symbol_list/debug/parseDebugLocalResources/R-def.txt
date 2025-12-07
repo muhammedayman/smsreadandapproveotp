@@ -9,9 +9,12 @@ color status_failed
 color status_pending
 color status_success
 color surface_card
+color text_on_accent
 color text_primary
 color text_secondary
 drawable bg_card
+drawable ic_launcher_background
+drawable ic_zerogate
 drawable item_background
 id btnAbout
 id btnGrantPermission
@@ -40,8 +43,13 @@ layout activity_about
 layout activity_config
 layout activity_main
 layout list_item_sms
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
 string app_name
 style AppTheme
 style CardStyle
+style ZeroGateButton
+style ZeroGateButton.Outlined
 xml backup_rules
 xml data_extraction_rules

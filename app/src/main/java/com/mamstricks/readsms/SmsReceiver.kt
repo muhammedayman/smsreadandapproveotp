@@ -38,8 +38,12 @@ class SmsReceiver : BroadcastReceiver() {
                         
                         Log.d("SmsReceiver", "Received SMS from $sender: $body")
                         
-                        // Pattern: Case insensitive, optional space, starts with DONIKKAH
-                        val pattern = Pattern.compile("(?i)donikkah\\s*\\d+")
+                        // Dynamic Keyword Pattern
+                        val prefs = android.preference.PreferenceManager.getDefaultSharedPreferences(context)
+                        val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
+                        
+                        // Pattern: Case insensitive, optional space, starts with keyword
+                        val pattern = Pattern.compile("(?i)$keyword\\s*\\d+")
                         val matcher = pattern.matcher(body)
 
                         if (matcher.find()) {

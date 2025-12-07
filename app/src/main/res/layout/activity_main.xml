@@ -29,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status: Active"
-            android:textColor="#B3E5FC"
+            android:textColor="@color/colorAccent"
             android:textSize="14sp"
             android:layout_marginTop="4dp"/>
     </LinearLayout>
@@ -54,10 +54,7 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:text="SCAN INBOX"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="@color/colorPrimary"/>
+                style="@style/ZeroGateButton" />
             
             <LinearLayout
                 android:layout_width="0dp"
@@ -71,9 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
                     android:text="SETTINGS"
-                    android:textSize="12sp"
-                    android:textColor="#FFFFFF"
-                    android:backgroundTint="@color/text_secondary"/>
+                    style="@style/ZeroGateButton.Outlined" />
                 
                 <Button
                     android:id="@+id/btnAbout"

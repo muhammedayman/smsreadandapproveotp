@@ -57,8 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="GRANT"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:textColor="#FFFFFF"/>
+                    style="@style/ZeroGateButton"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -261,10 +260,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="SAVE CONFIGURATION"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:backgroundTint="@color/colorPrimary"
-            android:textColor="#FFFFFF"
+            style="@style/ZeroGateButton"
             android:layout_marginBottom="32dp"/>
 
     </LinearLayout>

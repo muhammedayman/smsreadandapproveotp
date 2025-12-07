@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#212121</color> <!-- Almost Black -->
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#424242</color> <!-- Dark Gray -->
+    <color name="colorPrimary">#0A192F</color> <!-- Deep Blue -->
+    <color name="colorPrimaryDark">#040D19</color>
+    <color name="colorAccent">#00E5FF</color> <!-- Neon Cyan -->
     
-    <color name="background_light">#FAFAFA</color>
+    <color name="background_light">#F5F9FC</color> <!-- Very light blue-gray -->
     <color name="surface_card">#FFFFFF</color>
     
-    <color name="text_primary">#000000</color>
-    <color name="text_secondary">#616161</color>
-    <color name="divider">#EEEEEE</color>
+    <color name="text_primary">#0A192F</color> <!-- Deep Blue for text -->
+    <color name="text_secondary">#546E7A</color> <!-- Blue Grey -->
+    <color name="divider">#CFD8DC</color>
 
-    <color name="status_pending">#757575</color> <!-- Gray instead of Orange -->
-    <color name="status_success">#2E7D32</color> <!-- Darker Green -->
-    <color name="status_failed">#C62828</color> <!-- Darker Red -->
+    <color name="status_pending">#90A4AE</color>
+    <color name="status_success">#00C853</color>
+    <color name="status_failed">#D50000</color>
+    
+    <!-- Button Text on Accent -->
+    <color name="text_on_accent">#0A192F</color>
 </resources>

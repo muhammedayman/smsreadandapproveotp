@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ReadSmsApp"
+rootProject.name = "zeroGate"
 include(":app")
