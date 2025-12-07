@@ -266,7 +266,7 @@ class MainActivity : AppCompatActivity() {
         DebugRepository.setListener(null)
     }
 
-    private fun loadRecords() {
+    private fun loadRecords(customStatus: String? = null) {
         try {
              var records = dbHelper.getAllRecords()
             // FILTER BY TAB
@@ -280,7 +280,7 @@ class MainActivity : AppCompatActivity() {
             
             runOnUiThread {
                 adapter.updateData(records)
-                statusText.text = if (isVerifiedTab) "Verified Users (${records.size})" else "Pending/Failed (${records.size})"
+                statusText.text = customStatus ?: if (isVerifiedTab) "Verified Users (${records.size})" else "Pending/Failed (${records.size})"
             }
         } catch (e: Exception) {
             e.printStackTrace()
@@ -312,58 +312,66 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-
     private fun scanInbox() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
             statusText.text = "Grant Permissions First!"
             return
         }
 
-        var newSmsCount = 0
-        var sb = StringBuilder()
-        val processedNumbers = HashSet<String>()
+        statusText.text = "Scanning..."
+        val scanButton = findViewById<Button>(R.id.scanButton)
+        scanButton.isEnabled = false
 
-        try {
-            val uriSms = android.net.Uri.parse("content://sms/")
-            val cursorSms = contentResolver.query(uriSms, null, null, null, "date DESC")
-            
-            if (cursorSms != null && cursorSms.moveToFirst()) {
-                var loopCount = 0
-                do {
-                    val body = cursorSms.getString(cursorSms.getColumnIndexOrThrow("body"))
-                    val address = cursorSms.getString(cursorSms.getColumnIndexOrThrow("address")) ?: "Unknown"
-                    
-                    if (processedNumbers.contains(address)) {
+        Thread {
+            var newSmsCount = 0
+            val processedNumbers = HashSet<String>()
+
+            try {
+                val uriSms = android.net.Uri.parse("content://sms/")
+                val cursorSms = contentResolver.query(uriSms, null, null, null, "date DESC")
+                
+                if (cursorSms != null && cursorSms.moveToFirst()) {
+                    var loopCount = 0
+                    do {
+                        val body = cursorSms.getString(cursorSms.getColumnIndexOrThrow("body"))
+                        val address = cursorSms.getString(cursorSms.getColumnIndexOrThrow("address")) ?: "Unknown"
+                        
+                        if (processedNumbers.contains(address)) {
+                            loopCount++
+                            continue
+                        }
+                        
+                        processedNumbers.add(address)
+                        
+                        val prefs = PreferenceManager.getDefaultSharedPreferences(this)
+                        val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
+                        
+                         if (body.contains(keyword, ignoreCase = true)) {
+                              val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*([a-zA-Z0-9]+)")
+                              val matcher = pattern.matcher(body)
+                              val code = if (matcher.find()) matcher.group(1) else body
+                             
+                             if (saveRecordIfNew(code, address)) {
+                                 newSmsCount++
+                             }
+                        }
                         loopCount++
-                        continue
-                    }
-                    
-                    // MARK AS PROCESSED: We only look at the LATEST message per number.
-                    processedNumbers.add(address)
-                    
-                    val prefs = PreferenceManager.getDefaultSharedPreferences(this)
-                    val keyword = prefs.getString("keyword", "DONIKKAH") ?: "DONIKKAH"
-                    
-                     if (body.contains(keyword, ignoreCase = true)) {
-                          val pattern = java.util.regex.Pattern.compile("(?i)$keyword\\s*([a-zA-Z0-9]+)")
-                          val matcher = pattern.matcher(body)
-                          val code = if (matcher.find()) matcher.group(1) else body
-                         
-                         if (saveRecordIfNew(code, address)) {
-                             newSmsCount++
-                         }
-                    }
-                    loopCount++
-                } while (cursorSms.moveToNext() && loopCount < 300)
-                cursorSms.close()
+                    } while (cursorSms.moveToNext() && loopCount < 300)
+                    cursorSms.close()
+                }
+                
+                runOnUiThread {
+                    scanButton.isEnabled = true
+                    loadRecords("Scan Complete. Found: $newSmsCount new.")
+                }
+                
+            } catch (e: Exception) {
+                runOnUiThread {
+                    statusText.text = "Scan Error: ${e.message}"
+                    scanButton.isEnabled = true
+                }
             }
-            // Skipping MMS for brevity as syntax was broken before, focusing on restoring stability first
-             statusText.text = "Scan Complete. Found: $newSmsCount new."
-            
-        } catch (e: Exception) {
-            statusText.text = "Scan Error: ${e.message}"
-        }
+        }.start()
     }
 
     private fun saveRecordIfNew(code: String, phone: String): Boolean {
@@ -384,8 +392,4 @@ class MainActivity : AppCompatActivity() {
             false
         }
     }
-    
-    // ... MMS helpers if needed later ...
-    
-
 }
