@@ -25,7 +25,7 @@ class MainActivity : Activity() {
 
     private val SMS_PERMISSION_CODE = 100
     private lateinit var statusText: TextView
-    private lateinit var permissionButton: Button
+
     private lateinit var listView: ListView
     private lateinit var adapter: SmsAdapter
     private lateinit var dbHelper: DatabaseHelper
@@ -94,7 +94,7 @@ class MainActivity : Activity() {
             }
 
             statusText = findViewById(R.id.statusText)
-            permissionButton = findViewById(R.id.permissionButton)
+
             listView = findViewById(R.id.recyclerView)
             
             try {
@@ -194,9 +194,7 @@ class MainActivity : Activity() {
                 android.util.Log.e("CRASH_REPORT", "Load Error", e)
             }
 
-            permissionButton.setOnClickListener {
-                requestSmsPermission()
-            }
+
             
             try {
                 registerReceiver(refreshReceiver, IntentFilter("com.example.readsms.UPDATE_LIST"))
@@ -297,20 +295,12 @@ class MainActivity : Activity() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS) == PackageManager.PERMISSION_GRANTED &&
             ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) == PackageManager.PERMISSION_GRANTED) {
             statusText.text = "Listening & Ready..."
-            permissionButton.isEnabled = false
         } else {
-            statusText.text = "Permissions needed"
-            permissionButton.isEnabled = true
+            statusText.text = "Permissions needed (Go to Settings)"
         }
     }
 
-    private fun requestSmsPermission() {
-        ActivityCompat.requestPermissions(
-            this,
-            arrayOf(Manifest.permission.RECEIVE_SMS, Manifest.permission.READ_SMS),
-            SMS_PERMISSION_CODE
-        )
-    }
+
 
     private fun scanInbox() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
@@ -385,14 +375,5 @@ class MainActivity : Activity() {
     
     // ... MMS helpers if needed later ...
     
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == SMS_PERMISSION_CODE) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                checkPermission()
-            } else {
-                statusText.text = "Permission Denied"
-            }
-        }
-    }
+
 }

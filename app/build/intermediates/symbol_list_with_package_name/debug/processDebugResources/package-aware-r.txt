@@ -701,6 +701,7 @@ id beginning
 id blocking
 id bottom
 id btnAbout
+id btnGrantPermission
 id btnResend
 id btnSave
 id btnSettings
@@ -758,7 +759,6 @@ id notification_main_column_container
 id off
 id on
 id parentPanel
-id permissionButton
 id progress_circular
 id progress_horizontal
 id radio
@@ -821,6 +821,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id tvPermissionStatus
 id unchecked
 id uniform
 id up

@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 drawable item_background
 id btnAbout
+id btnGrantPermission
 id btnResend
 id btnSave
 id btnSettings
@@ -14,13 +15,13 @@ id etHeaderVal1
 id etHeaderVal2
 id etKeyword
 id etPayload
-id permissionButton
 id recyclerView
 id scanButton
 id statusText
 id textCode
 id textPhone
 id textStatus
+id tvPermissionStatus
 layout activity_about
 layout activity_config
 layout activity_main

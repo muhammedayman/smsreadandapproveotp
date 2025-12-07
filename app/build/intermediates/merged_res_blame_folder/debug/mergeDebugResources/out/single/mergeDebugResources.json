@@ -4,10 +4,6 @@
         "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\layout\\list_item_sms.xml"
     },
     {
-        "merged": "com.example.readsms.app-debug-22:/layout_activity_main.xml.flat",
-        "source": "com.example.readsms.app-main-24:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\xml\\backup_rules.xml"
     },
@@ -22,6 +18,10 @@
     {
         "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\layout_activity_about.xml.flat",
         "source": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-main-24:\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "com.example.readsms.app-debug-22:/layout_activity_config.xml.flat",
+        "source": "com.example.readsms.app-main-24:/layout/activity_config.xml"
     },
     {
         "merged": "C:\\Users\\ZAYA\\.gradle\\daemon\\9.0-milestone-1\\com.example.readsms.app-debug-22:\\layout_activity_main.xml.flat",

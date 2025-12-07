@@ -700,6 +700,7 @@ int id beginning 0x7f08003e
 int id blocking 0x7f08003f
 int id bottom 0x7f080040
 int id btnAbout 0x7f080041
+int id btnGrantPermission 0x7f0800c5
 int id btnResend 0x7f080042
 int id btnSave 0x7f080043
 int id btnSettings 0x7f080044
@@ -757,7 +758,6 @@ int id notification_main_column_container 0x7f080075
 int id off 0x7f080076
 int id on 0x7f080077
 int id parentPanel 0x7f080078
-int id permissionButton 0x7f080079
 int id progress_circular 0x7f08007a
 int id progress_horizontal 0x7f08007b
 int id radio 0x7f08007c
@@ -820,6 +820,7 @@ int id titleDividerNoCustom 0x7f0800b4
 int id title_template 0x7f0800b5
 int id top 0x7f0800b6
 int id topPanel 0x7f0800b7
+int id tvPermissionStatus 0x7f0800c6
 int id unchecked 0x7f0800b8
 int id uniform 0x7f0800b9
 int id up 0x7f0800ba
